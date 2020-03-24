@@ -11,14 +11,14 @@ public class Runner {
 
 		System.out.println(user.printUserName("The user name is: " + username));
 
-		System.out.println(user.printSalary("This is you anual salary: " + amount));
+		System.out.println(user.printSalary("This is you anual salary: £" + amount));
 
 		if (amount < 21000) {
-			System.out.println(user.taxCalculator("You are paying 10% tax: " + amount * 0.1));
+			System.out.println(user.taxCalculator("You are paying 10% tax: £" + amount * 0.1));
 		} else if (amount < 32500) {
-			System.out.println(user.taxCalculator("You are paying 20% tax: " + amount * 0.2));
+			System.out.println(user.taxCalculator("You are paying 20% tax: £" + amount * 0.2));
 		} else {
-			System.out.println(user.taxCalculator("You are paying 40% tax: " + amount * 0.4));
+			System.out.println(user.taxCalculator("You are paying 40% tax: £" + amount * 0.4));
 		}
 	}
 }
